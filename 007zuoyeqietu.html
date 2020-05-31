@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>雪梨在线</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	ul{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	.clear::after {
+    	content: '';
+    	height: 0;
+    	display: block;
+    	clear: both;
+    }
+	.box{
+		width:1920px;
+height:2466px;
+		
+	
+	}
+	.hearder{
+		width: 1100px;
+		height: 30px;
+		margin: 0 auto;
+	}
+	.hearder li{
+		float: left;
+		
+	}
+	.xlzx{
+		
+		margin-top: -10px;
+		width:85px;
+		height:19px;
+		font-size:20px;
+		font-family:Microsoft YaHei;
+		font-weight:bold;
+		color:rgba(0,163,255,1);
+		
+	}
+	.sy{
+		margin-left: 50px;
+		margin-top: 10px;
+	}
+	.sy li{
+		margin-left: 80px;
+		margin-top: -10px;
+		float: left;
+	}
+	.sy a{
+		display: inline-block;
+		line-height:15px;
+		text-align: center;
+		width:50px;
+		height:20px;
+		font-size:9px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(5,5,5,1);
+		margin-top: -10px;
+	}
+	.sy a:hover{
+		border-bottom:1px solid rgba(0,163,255,1);
+	}
+	.search1{
+		margin-left: 150px;
+		padding-top: -10px;
+	}
+	.search2{
+		position: absolute;
+		margin-top: -10px;
+		margin-left: 50px;
+	}
+	.search3{
+		margin-left: 280px;
+		margin-top: -6px;
+		width:24px;
+		height:19px;
+		background:rgba(0,163,255,1);
+		position: relative;
+	}
+	
+	.search5{
+		margin-left: 20px;
+		margin-top: 0;
+		width:50px;
+		height:6px;
+		font-size:7px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(101,101,101,1);
+	}
+	.a54{
+		width:1920px;
+		height:420px;
+		background:rgba(27,3,107,1);
+		margin-top: 20px;
+	}
+	.a40{
+		width:1200px;
+		height:60px;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 2px 2px 0px rgba(118,118,118,0.2);
+		margin-left: 360px;
+		margin-top: 10px;
+	}
+	.b1{
+		width: 1105px;
+		margin: 0 auto;
+	}
+	.b1 li{
+		
+
+	}
+	.b1 a{
+		display: inline-block;
+		line-height:15px;
+		text-align: center;
+		width:100px;
+		height:20px;
+	
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		
+		margin-top: 20px;
+	}
+	.b2 li{
+		border-right:2px solid #BFBFBF
+	}
+	.b2 a{
+		font-size: 16px;
+		color: #050505;
+		float: left;
+		border-right:2px solid #BFBFBF
+	}
+	.b2 a:hover{
+		color: #00A3FF;
+		font-weight: bold;
+	}
+	.b3 a{
+		font-size: 16px;
+		color: #050505;
+		float: left;
+	}
+	.b3 a:hover{
+		color: #00A3FF;
+		font-weight: bold;
+	}
+	.b4 a{
+		font-size: 14px;
+		color: #00A3FF;
+		float: right;
+	}
+	.c2{
+            width:80px;
+            height:19px;
+            margin-left:360px;
+            margin-top:37px;
+            margin-right:1041px;
+            float:left;
+            font-size:20px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(73,73,73,1);
+            line-height: 19px;
+            float:left;
+        }
+        .c3{
+            width:48px;
+            height:13px;
+            margin-top:44px;
+            float:left;
+            font-size:12px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(165,165,165,1);
+            line-height: 13px;
+            text-decoration:none;
+        }
+
+	.tu{
+		width:1215px;
+            height:555px;
+            margin-left:360px;
+            margin-top: 77px;
+            position: relative;
+	}
+	.tu1{
+		width:235px;
+        height:276px;
+        margin-right: 6px;
+        margin-bottom: 6px;
+        float: left;
+	}
+	.zi1{
+		width:185px;
+        height:34px;
+        margin-left:23px;
+        margin-top: -100px;
+		font-size:14px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(5,5,5,1);
+        line-height:20px;
+	}
+	.zi2{
+		width:119px;
+        height:13px;
+        margin-top: 18px;
+        margin-left:27px;
+        position: absolute;
+        
+    }
+	.zi3{
+		font-size:12px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:#FF7C2D;
+        width: 24px;
+        float: left;
+	}
+	.zi4{
+		font-size:12px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:#999999;
+        width: 85px;
+        float: right;
+	}
+	.tu3{
+            width:228px;
+            height:270px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            float:left;
+        }
+    .tu5{
+    	width:228px;
+        height:270px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        float:left;
+    }
+    .tu7{
+    	width:228px;
+            height:270px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            float:left;
+    }
+    .tu8{
+    	width:228px;
+            height:270px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            float:left;
+    }
+    .tu9{
+    	width:228px;
+            height:270px;
+            margin-right: 15px;
+            float:left;
+    }
+    .tu10{
+            height:270px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            float:left;
+    }
+    .tu11{
+    	width:228px;
+            height:270px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            float:left;
+    }
+    .tu12{
+    	width:228px;
+            height:270px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            float:left;
+    }
+    .tu13{
+    	width:228px;
+            height:270px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            float:left;
+    }
+    .tu14{
+    	width:228px;
+            height:270px;
+            margin-bottom: 15px;
+            float:left;
+    }
+    .d1{
+    	width: 1200px;
+    	height: 50px;
+    	margin-left: 360px;
+    }
+    .d2{
+    	width:140px;
+            height:19px;
+            margin-top: 37px;
+            float:left;
+    }
+    .d3{
+    	line-height: 19px;
+            font-size:20px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(73,73,73,1);
+    }
+    .d4{
+    	width:32px;
+            height:15px;
+            margin-top:41px;
+            margin-left:291px;
+            float:left;
+    }
+    .d5{
+    	line-height: 15px;
+            font-size:16px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:#868686;
+            text-decoration: none;
+    }
+    .d5:hover{
+    	color:#00A4FF;
+    }
+    .d6{
+    	width:32px;
+            height:15px;
+            margin-top:41px;
+            margin-left:68px;
+            float:left;
+    }
+    .d7{
+    	width:48px;
+            height:13px;
+            margin-top:41px;
+            margin-left:363px;
+            float:left;
+    }
+    .d8{
+    	line-height: 13px;
+            font-size:12px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(165,165,165,1);
+            text-decoration: none;
+    }
+    .tu25{
+		width:1215px;
+            height:270px;
+            margin-left:360px;
+            margin-top: 80px;
+            }
+	.tu15{
+		width:228px;
+            height:270px;
+            margin-right:15px;
+            float:left;   
+	}
+	.tu17{
+		width:228px;
+            height:270px;
+            margin-right:15px;
+            float:left;   
+	}
+	.tu19{
+		width:228px;
+            height:270px;
+            margin-right:15px;
+            float:left;   
+	}
+	.tu21{
+		width:228px;
+            height:270px;
+            margin-right:15px;
+            float:left;   
+	}
+	.tu23{
+		width:228px;
+            height:270px;
+            margin-right:15px;
+            float:left;   
+	}
+	.e1{
+            width:80px;
+            height:19px;
+            margin-top:35px;
+            margin-left:362px;
+        }
+    .e2{
+            line-height: 14px;
+            font-size:20px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(73,73,73,1);
+
+        }
+	.f1{
+            width:1200px;
+            height:320px;
+            margin-top:33px;
+            margin-left:359px;
+        }
+        .f2{
+            width:471px;
+            height:320px;
+            margin-right: 15px;
+            float:left;
+        }
+        .f3{
+            width:90px;
+            height:36px;
+            margin-top:99px;
+            margin-left:25px;
+        }
+        .zi5{
+            line-height: 36px;
+            color:#F9E103;
+            font-size:30px;
+            font-family:Microsoft YaHei;
+            font-weight:bold;
+        }
+        .f4{
+            width:150px;
+            height:22px;
+            margin-top:4px;
+            margin-left:25px;                
+        }
+        .zi6{
+            font-size: 25px;
+            font-family: Microsoft YaHei;
+            line-height: 22px;
+            color:#FFFFFF; 
+        }
+        .f5{
+            width:87px;
+            height:25px;
+            margin-top:12px;
+            margin-left:28px;
+            text-align:center;
+            border:1px solid #F9E103;
+        }
+        .zi7{
+            font-size:13px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(249,225,3,1);
+            line-height:20px;
+            text-decoration: none;
+        }
+        .f6{
+            width:228px;
+            height:320px;
+            margin-right: 15px;
+            float:left;
+        }
+        .f7{
+            width:60px;
+            height:18px;
+            margin-top:219px;
+            margin-left: 29px;
+            float:left;
+        }
+        .zi8{ 
+            font-size:18px;
+            font-family:Microsoft YaHei;
+            font-weight:bold;
+            color:rgba(255,255,255,1);
+            line-height:20px;
+        }
+        .f8{
+            width:40px;
+            height:12px;
+            margin-top: 220px;
+            margin-left:8px;
+            float:left;
+        }
+        .zi9{
+            font-size:13px;
+            font-family:Microsoft YaHei;
+            font-weight:bold;
+            color:rgba(255,255,255,1);
+            line-height:20px;
+        }
+        .f9{
+            width:175px;
+            height:53px;
+            margin-top: 244px;
+            margin-left: 25px;
+        }
+        .zi10{
+            font-size:12px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+        }
+        .f10{
+            width:228px;
+            height:320px;
+            margin-right: 15px;
+            float:left;
+            
+        }
+        .f14{
+            width:228px;
+            height:320px;
+            float:left;
+            
+        }
+
+</style>
+<body>
+	<div class="box clear">
+		<ul class="hearder clear">
+			<li class="xlzx">雪梨在线</li>
+			<ul class="sy">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">课程</a></li>
+				<li><a href="#">职业规划</a></li>
+			</ul>
+			<li class="search1">
+				<form class="search2">
+					<input type="text" name="search2" value="输入关键词" style="font-size:7px;font-family:Microsoft YaHei;font-weight:400;color:rgba(191,191,191,1);line-height:15px;border-color:rgba(0,163,255,1);border-style:solid;margin-top:0;" size="40">
+				</form>
+				<div class="search3">
+				<div class="search4 clear">
+					<a href="#">
+						<img src="img/search.png" style="width: 9.5px;height: 9.5px;display:block;margin:0 auto;padding-top:5px;"/>
+					</a>
+				</div>
+				</div>
+			</li>
+			<li class="search5"><a href="#">个人中心</a></li>
+		</ul>
+		<div class="a54 clear">
+			<img src="img/54.png" style="width:1200px;height:420px;margin-left:390px;position:absolute;"/>
+			<img src="img/beijing.png" style="margin-left:360px; position:absolute;"/>
+		</div>
+		<div class="a40">
+			<ul class="b1">
+				<div class="b2">
+					<li><a href="#">精品推荐</a></li>
+					<li><a href="#">JQuery</a></li>
+					<li><a href="#">Spark</a></li>
+					<li><a href="#">MySQL</a></li>
+					<li><a href="#">JavaWeb</a></li>
+					<li><a href="#">MySQL</a></li>
+				</div>
+					<li class="b3"><a href="#">JavaWeb</a></li>
+					<li class="b4"><a href="#">修改兴趣</a></li>
+			</ul>
+		</div>
+		<div class="c1">
+			<div class="c2">精品推荐</div>
+			<a class="c3" href="#">查看全部</a>
+		</div>
+		<div class="tu">
+		<div class="tu1">
+			<a class="tu2" href="#"><img src="img/tu2.png"><div class="zi1">Think PHP 5.0 博客系统实战项目演练</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+		</div>
+		<div class="tu3">
+			<a class="tu4" href="#"><img src="img/tu4.png"><div class="zi1">Android 网络图片加载框架详解</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+		</div>
+		<div class="tu5">
+			<a class="tu6" href="#"><img src="img/tu6.png"><div class="zi1">Angular 2 最新框架+主流技术+项目实战</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+		</div>
+		<div class="tu7">
+			<a class="tu8" href="#"><img src="img/tu8.png"><div class="zi1">Android Hybrid APP开发实战 H5+原生！</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+		</div>
+		<div class="tu9">
+			<a class="tu8" href="#"><img src="img/tu8.png"><div class="zi1">Android Hybrid APP开发实战 H5+原生！</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+		</div>
+		<div class="tu10">
+			<a class="tu2" href="#"><img src="img/tu2.png"><div class="zi1">Think PHP 5.0 博客系统实战项目演练</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+		</div>
+		<div class="tu11">
+			<a class="tu4" href="#"><img src="img/tu4.png"><div class="zi1">Android 网络图片加载框架详解</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+		</div>
+		<div class="tu12">
+			<a class="tu6" href="#"><img src="img/tu6.png"><div class="zi1">Angular 2 最新框架+主流技术+项目实战</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+		</div>
+		<div class="tu13">
+			<a class="tu8" href="#"><img src="img/tu8.png"><div class="zi1">Android Hybrid APP开发实战 H5+原生！</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+		</div>
+		<div class="tu14">
+			<a class="tu8" href="#"><img src="img/tu8.png"><div class="zi1">Android Hybrid APP开发实战 H5+原生！</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+		</div>
+		</div>
+		<div class="d1">
+                <div class="d2"><a class="d3">前端开发工程师</a></div>
+                <div class="d4"><a class="d5" href="#">热门</a></div>
+                <div class="d6"><a class="d5" href="#">初级</a></div>
+                <div class="d6"><a class="d5" href="#">中级</a></div>
+                <div class="d6"><a class="d5" href="#">高级</a></div>
+                <div class="d7"><a class="d8" href="#">查看全部</a></div>
+            </div>
+            <div class="tu25">
+            <div class="tu15">
+			<a class="tu16" href="#"><img src="img/tu16.png"/><div class="zi1">微软人工智能-数据分析平台</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+			</div>
+            <div class="tu17">
+			<a class="tu18" href="#"><img src="img/tu18.png"/><div class="zi1">Unity Profller入门</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+			</div>
+			<div class="tu19">
+			<a class="tu20" href="#"><img src="img/tu20.png"/><div class="zi1">Cocos2d-x 引擎源码中的纹理优化</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+			</div>
+			<div class="tu21">
+			<a class="tu22" href="#"><img src="img/tu22.png"/><div class="zi1">Kaml2首页界面切换效果</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+			</div>
+			<div class="tu23">
+			<a class="tu24" href="#"><img src="img/tu24.png"/><div class="zi1">Hybrid APP开发实战 H5+原生！</div>
+			<div class="zi2">
+			<div class="zi3">高级</div>
+			<div class="zi4">· 1125人在学习</div></div>
+			</a>
+			</div>
+			</div>
+            <div class="e1">
+                <a class="e2">牛人推荐</a>
+            </div>
+            <div class="f1">
+                <div class="f2">
+                    <div class="f3"><img src="img/tu26.png" class="f2"><a class="zi5">毕业季</a></div>
+                    <div class="f4"><a class="zi6">带你华丽转身</a></div>
+                    <div class="f5"><a class="zi7" href="#">点击查看</a></div>
+                </div>
+                <div class="f6">
+                    <div class="f7"><img src="img/tu27.png" class="f6"><a class="zi8">闻老师</a></div>
+                    <div class="f8"><a class="zi9">大数据</a></div>
+                    <div class="f9"><a class="zi10">高级互联网软件工程师，曾担任物流公司CRM开发团队TL。多年JAVAEE、大数据领域研发······</a></div>  
+                </div>
+                <div class="f10">
+                    <div class="f11"><img src="img/tu28.png" class="f10"><a class="zi8">汪老师</a></div>
+                    <div class="f12"><a class="zi9">前端</a></div>
+                    <div class="f13"><a class="zi10">高级软件架构师，全栈开发，多年大型项目管理经验。对WebComponents、Node.js......</a></div>
+                </div>
+                <div class="f14">
+                    <div class="f15"><img sec="img/tu29.png" class="f14"><a class="zi8">江老师</a></div>
+                    <div class="f16"><a class="zi9">前端</a></div>
+                    <div class="f17"><a class="zi10">多年软件开发经验和教学经验。精通html，css
+                    ,js,asp,net等编程语言和数据库系统......</a></div>
+                </div>
+            </div>
+	</div>
+</body>
+</html>
